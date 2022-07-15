@@ -1,0 +1,236 @@
+body{margin: 0;padding: 0;font-size: 20px;word-spacing: 120%;line-height:150%;}
+img{width:100%;height:auto;}
+h1{font-size:200%;}
+h2{font-size:200%; font-family: 'Bookman Old Style'; line-height: 45px;}
+h3{font-size:160%;}
+
+.bold{font-weight: bold;color:red;font-size:44px; }
+.summery{font-size:28px;font-style: italic;background:#e7e7e7;padding:10px 20px;}
+
+/* Making the hidden content actually hidden */
+.hidden-content{
+  display: none;
+}
+
+.container{
+	display:flex;
+  margin:0 auto;
+	padding:0;
+	width:100%;
+	max-width:1200px;
+	justify-content: space-between;
+}
+/* styling the rad more button */
+#read-more-button{
+  background: rgb(14, 5, 5);
+  color: #FFA500;
+  padding: 20px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+}
+/* styling the read more button on hover */
+#read-more-button:hover{
+  box-shadow: #121 -4px 6px 20px;
+  cursor: pointer;
+  background: #FFA500;
+  color: rgb(248, 0, 0);
+  transition-duration: .38s;
+}
+
+/* styling the content-glimpse */
+.content-glimpse{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#subscribe-form{
+  margin: auto;
+}
+
+/* emphasized text */
+#emphasized{
+  color: red;
+  font-weight: 580;
+}
+
+.container-header{
+	display:flex;
+	margin:0 auto;
+	padding:0;
+	width:100%;
+  max-width:1200px;
+  max-height: 10vh;
+	justify-content: space-between;
+}
+
+.normal-container{
+	margin:0 auto;
+	width:100%;
+	max-width:1200px;
+}
+
+.header{background:orange;position: fixed; top: 0; width: 100%; height:79px;}
+.logo{flex:1; }
+.logo img{width:80px;height:auto;}
+.menu{flex:3;}
+
+
+.menu ul{display:flex;float:right;list-style-type: none;}
+.menu ul li a{text-decoration: none;color:#fff;padding:25px 10px 33px;}
+.menu ul li a:hover{background:black;color:yellow;transition: all 1s;}
+
+.mobile-menu{display:none;}
+
+#hero {padding:60px 0;margin-top:-0px;margin-bottom:-70px;}
+
+#body-1,#body-2,#body-3,#body-4{padding:60px 0;}
+#body-2,#body-4{background:#f6f6f6;}
+#body-1,#body-3{background:#fff;color:#444;}
+
+.message,.image{flex:1;}
+.message{padding:20px;}
+.image{padding:20px 0;margin-top:30px;}
+
+#subscribe{padding:40px 0;background:#2196f3;color:#fff;font-size:20px;}
+#subscribe input,#subscribe button{padding:10px 20px;}
+
+/* #widget{padding:60px 0;background:#222;color:#848d95;font-size:18px;line-height:130%;}
+#widget h3{color:#bbc0c4;}
+#widget ul{margin-left:-35px;list-style-type: none;}
+#widget ul li{line-height:180%;font-size:16px;}
+#widget a{color:#848d95;text-decoration: none;}
+#widget a:hover{color:#fff;transition: all 0.5s;}
+.widget{flex-basis:32%;}
+ */
+#footer {background: #444;color:#999;}
+#footer p{padding:5px;margin:0 auto;font-size:14px;text-align: center;}
+#footer a{color:#fff;text-decoration: none;}
+
+@media screen and (max-width:800px){
+	article{padding:0 10px;}
+	.container{flex-direction:column;}
+
+	#hero{margin-top:10px;margin-bottom:-40px;}
+	.widget,.message,.image {flex-basis:98%;}
+	.image{order:1;}
+	.message{order:2;}
+	.widget{padding:10px;}
+	.menu{display:none;}
+	.mobile-menu{display:block;}
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+.sidebar ul{list-style:none;margin-left:-40px;}
+/* The sidebar links */
+.sidebar a {
+  padding: 8px;
+  text-decoration: none;
+  font-size:18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+  background:#999;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right:0px;
+  font-size: 36px;
+  padding:8px 15px;
+  background:red;color:#fff;}
+ }
+.sidebar .closebtn:hover{background:red;color:#fff;}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 22px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+@media(max-width: 1160px){
+}
+
+#submit1{
+   background: rgb(14, 5, 5);
+  color: #FFA500;
+  padding: 20px 25px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 5px;
+
+}
+
+#submit1:hover{
+  box-shadow: #121 -4px 6px 20px;
+  cursor: pointer;
+  background: #FFA500;
+  color: rgb(248, 0, 0);
+  transition-duration: .38s;
+}
+
+#input1{
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 35px;
+  color: white;
+  font-size: 16px;
+
+}
+
+#color{
+  color: yellow;
+  font-size: 20px;
+  font-family: "Agencyfb";
+}
+
+
+.final{
+  font-size: 60px;
+  line-height: 55px;
+  font-family: "algerian";
+  color: black;
+  text-align: center;
+
+
+
+}
+
+.final:hover{
+  color:blue;
+  transition: 1s ease all ;
+
+}
